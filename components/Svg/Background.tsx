@@ -12,10 +12,7 @@ export default function Background (props: BackgroundProps) {
 			preserveAspectRatio="none"
 			viewBox="0 0 1000 1000"
 		>
-			<g
-				mask="url(&quot;#SvgjsMask1063&quot;)"
-				fill="none"
-			>
+			<g>
 				<rect
 					x="0"
 					y="0"
