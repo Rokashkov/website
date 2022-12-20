@@ -1,7 +1,7 @@
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import Main from '../Main/Main'
-import Background from '../Svg/Background'
+import Background from '../Svg/Background/Background'
 import styles from './Layout.module.sass'
 
 interface LayoutProps {
