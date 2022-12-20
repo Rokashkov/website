@@ -1,0 +1,19 @@
+@use '../../../../styles/root'
+	
+.wrapper
+	display: flex
+	align-items: center
+	height: 100%
+	transition: color 0.3s ease
+	cursor: pointer
+	user-select: none
+
+.wrapper > svg
+	width: 24px
+	height: 24px
+	fill: root.$colorLight
+	transition: fill 0.3s ease
+
+.wrapper:hover > svg
+	fill: root.$colorBrightest
+

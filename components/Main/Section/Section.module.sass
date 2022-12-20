@@ -1,0 +1,24 @@
+@use '../../../styles/root'
+	
+.section
+	display: flex
+	flex-direction: column
+	align-items: center
+	flex-grow: 1
+	width: 100%
+	min-height: 600px
+
+.content
+	z-index: 2
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	flex-grow: 1
+	width: 100%
+	max-width: root.$maxWidthContents
+	padding: 40px 60px
+	gap: 20px
+	background-color: root.$colorDarkest
+	color: root.$colorLight
+	line-height: 1.4

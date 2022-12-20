@@ -1,0 +1,16 @@
+@use '../../../../styles/root'
+	
+.wrapper
+	display: flex
+	align-items: center
+	padding: 0 20px
+	height: 100%
+	transition: color 0.3s ease
+	cursor: pointer
+	user-select: none
+
+.wrapper:hover
+	color: root.$colorBrightest
+
+.active
+	background: root.$colorDarkest
