@@ -44,7 +44,7 @@ export default function Header (props: HeaderProps) {
 			className={ styles.header }
 		>
 			<div className={ styles.content }>
-				<div className={ styles.shadow }></div>
+				<div className={ styles.shadow }/>
 				<NavLeft>
 					<NavItemText href='/'>Main</NavItemText>
 					<NavItemText href='/about'>About</NavItemText>

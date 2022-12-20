@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import styles from './Main.module.sass'
 
 interface MainProps {
@@ -9,10 +8,6 @@ export default function Main (props: MainProps) {
 	const { children } = props
 
 	return (
-		<main
-			className={ styles.main }
-		>
-			{ children }
-		</main>
+		<main className={ styles.main }>{ children }</main>
 	)
 }
