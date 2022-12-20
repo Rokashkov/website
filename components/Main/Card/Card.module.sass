@@ -36,12 +36,15 @@
 .icon
 	width: 100px
 	height: 100px
-	border-radius: 50%
-	background-color: root.$colorLight
-	transition: background-color 0.3s ease
 
-.wrapper:hover .icon
-	background-color: root.$colorBrightest
+.icon > svg
+	fill: root.$colorLight
+	stroke: root.$colorLight
+	transition: all 0.3s ease
+	
+.wrapper:hover .icon > svg
+	fill: root.$colorBrightest
+	stroke: root.$colorBrightest
 
 .button
 	padding: 5px 10px

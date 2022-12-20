@@ -2,6 +2,10 @@ import Layout from "../components/Layout/Layout"
 import Card from "../components/Main/Card/Card"
 import CardBoard from "../components/Main/CardBoard/CardBoard"
 import Section from "../components/Main/Section/Section"
+import Gallery from "../components/Svg/Gallery"
+import Gear from "../components/Svg/Gear"
+import Telegram from "../components/Svg/Telegram"
+import User from "../components/Svg/User"
 
 export default function Index () {
 	
@@ -17,6 +21,7 @@ export default function Index () {
 				<h2>You Can Find</h2>
 				<CardBoard>
 					<Card
+						icon={ <User/> }
 						title="About"
 						linkText="Meet"
 						href="/about"
@@ -24,6 +29,7 @@ export default function Index () {
 						To introduce myself, I have a whole page about me, my skills and my bio
 					</Card>
 					<Card
+						icon={ <Gear/> }
 						title="My Projects"
 						linkText="Check"
 						href="/projects"
@@ -31,6 +37,7 @@ export default function Index () {
 						Check my projects and a short summary for each of them
 					</Card>
 					<Card
+						icon={ <Gallery/> }
 						title="Gallery"
 						linkText="Watch"
 						href="/gallery"
@@ -38,6 +45,7 @@ export default function Index () {
 						You can watch my personal gallery of some cool solutions and apps
 					</Card>
 					<Card
+						icon={ <Telegram/> }
 						title="My Contacts"
 						linkText="Visit"
 						href="/contacts"

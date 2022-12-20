@@ -5,10 +5,11 @@ interface CardProps {
 	title?: string
 	linkText?: string
 	href?: string
+	icon?: JSX.Element
 }
 
 export default function Card (props: CardProps) {
-	const { children, title, linkText, href } = props
+	const { children, title, linkText, href, icon } = props
 
 	return (
 		<div
@@ -17,7 +18,7 @@ export default function Card (props: CardProps) {
 				window.location.href = href
 			} }
 		>
-			<div className={ styles.icon }/>
+			<div className={ styles.icon }>{ icon }</div>
 			<div className={ styles.title }>{ title }</div>
 			<div className={ styles.description }>{ children }</div>
 			<a
