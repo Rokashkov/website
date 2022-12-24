@@ -1,0 +1,46 @@
+@use '../../../../styles/root'
+
+.item
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	align-items: center
+	justify-content: space-between
+	gap: 30px
+	font-style: italic
+	cursor: pointer
+	transition: color 0.3s ease
+	padding: 10px 15px
+
+.item:hover
+	color: root.$colorBrightest
+
+.item:hover .point
+	background-color: root.$colorBrightest
+	left: 0
+
+.text
+	flex-shrink: 0
+	font-size: 18px
+
+.arrow
+	position: relative
+	width: 100%
+	transition: width 0.3s ease
+
+.point
+	position: absolute
+	background-color: root.$colorLight
+	width: 10px
+	height: 2px
+	border-radius: 5px
+	left: calc(100% - 9px)
+	transition: all 0.3s ease
+
+.top
+	transform: rotate(-45deg)
+	top: -3px
+
+.bot
+	transform: rotate(45deg)
+	top: 3px

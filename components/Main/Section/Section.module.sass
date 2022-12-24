@@ -6,7 +6,7 @@
 	align-items: center
 	flex-grow: 1
 	width: 100%
-	min-height: 600px
+	min-height: 70vh
 
 .content
 	z-index: 2
@@ -18,7 +18,17 @@
 	width: 100%
 	max-width: root.$maxWidthContents
 	padding: 40px 60px
-	gap: 20px
+	gap: 40px
 	background-color: root.$colorDarkest
 	color: root.$colorLight
-	line-height: 1.4
+	line-height: 1.6
+	text-align: center
+	word-break: break-word
+
+.content.article
+	align-items: flex-start
+	justify-content: flex-start
+	text-align: start
+
+.section.article
+	min-height: auto
